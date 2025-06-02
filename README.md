@@ -1,6 +1,7 @@
 # Gerenciador de Salas
 
-**Conteúdo da Disciplina**: Algoritmos  
+**Número da Lista**: 3 <br>
+**Conteúdo da Disciplina**: Greed <br>
 
 ## Alunos
 |Matrícula | Aluno |
@@ -19,7 +20,7 @@ Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 
 1. Clone este repositório:
    ```bash
-    https://github.com/projeto-de-algoritmos-2025/Gerenciador_de_Salas.git
+   https://github.com/projeto-de-algoritmos-2025/Gerenciador_de_Salas.git
    ```
 3.Acesse o diretório do Projeto:   
    ```bash
@@ -46,8 +47,10 @@ Na primeira tabela, você vê todos os pedidos gerados, com as atividades e seus
 
  No gráfico, fica fácil visualizar quais horários estão ocupados e quais foram aprovados (em azul) ou recusados (em cinza).
 
-## Apresentação
-Link da apresentação:
+## Screenshot
+
+Funcionamento:![Captura de tela de 2025-06-02 16-25-45](https://github.com/user-attachments/assets/ba7546e6-de8f-4ee3-af4a-a7579024d94d)
+)
 
 
 
