@@ -90,5 +90,29 @@ class ReservationApp:
         self.fig, self.ax = plt.subplots(figsize=(10, 4))
         self.canvas = FigureCanvasTkAgg(self.fig, master=root)
         self.canvas.get_tk_widget().pack()
+def run_scheduling(self):
+    try:
+            n = int(self.entry.get())
+            self.tree_all.delete(*self.tree_all.get_children())
+            self.tree_selected.delete(*self.tree_selected.get_children())
+            self.ax.clear()
 
-    
+            reservations = generate_reservations(n)
+            accepted = max_non_overlapping_reservations(reservations)
+
+            for r in reservations:
+                start_ampm = convert_to_ampm(r.start)
+                end_ampm = convert_to_ampm(r.end)
+                self.tree_all.insert("", tk.END, values=(r.id, r.activity, start_ampm, end_ampm))
+
+            for r in accepted:
+                start_ampm = convert_to_ampm(r.start)
+                end_ampm = convert_to_ampm(r.end)
+                self.tree_selected.insert("", tk.END, values=(r.id, r.activity, start_ampm, end_ampm))
+
+            y_all = []
+            for i, r in enumerate(reservations):
+                self.ax.barh(i, r.end - r.start, left=r.start, color='lightgray', edgecolor='black', label='Não aceito' if i==0 else "")
+                label = f"{r.activity}\n{convert_to_ampm(r.start)}-{convert_to_ampm(r.end)}"
+                self.ax.text(r.start + (r.end - r.start)/2, i, label, ha='center', va='center', fontsize=8, color='black')
+                y_all.append(i)
