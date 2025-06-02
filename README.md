@@ -19,19 +19,15 @@ Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 
 1. Clone este repositório:
    ```bash
-   
-   ```
-2. Antes de rodar o projeto, instale as dependências necessárias utilizando o seguinte comando: 
-    ```bash
-  
+    https://github.com/projeto-de-algoritmos-2025/Gerenciador_de_Salas.git
    ```
 3.Acesse o diretório do Projeto:   
-```bash
-   
+   ```bash
+   cd gerenciador_salas.py
    ```
 4.Execute o arquivo principal:
    ```bash
-  
+  python gerenciador_salas.py
    ```
     
 
