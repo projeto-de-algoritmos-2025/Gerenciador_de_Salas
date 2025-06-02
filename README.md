@@ -50,7 +50,7 @@ Na primeira tabela, você vê todos os pedidos gerados, com as atividades e seus
 ## Screenshot
 
 Funcionamento:![Captura de tela de 2025-06-02 16-25-45](https://github.com/user-attachments/assets/ba7546e6-de8f-4ee3-af4a-a7579024d94d)
-)
+
 
 
 
